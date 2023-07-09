@@ -1,6 +1,6 @@
 <?php
 
-namespace Zorb\NovaPromocodes\Http\Controllers;
+namespace Aberbin\NovaPromocodes\Http\Controllers;
 
 use Carbon\Carbon;
 use Laravel\Nova\Http\Requests\CreateResourceRequest;
@@ -19,16 +19,14 @@ class ResourceStoreController extends Controller
         $userId = $request->input('user');
         $user = null;
 
-        if ($userId) {
+        if ($userId)
             $user = app(config('promocodes.models.users.model'))->findOrFail($userId);
-        }
 
         $expiredAt = $request->input('expired_at');
         $expiration = null;
 
-        if ($expiredAt) {
+        if ($expiredAt) 
             $expiration = Carbon::parse($expiredAt);
-        }
 
         $promocodes = createPromocodes(
             mask: $request->input('mask'),

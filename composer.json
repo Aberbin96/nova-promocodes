@@ -13,12 +13,12 @@
         },
         {
             "url": "https://github.com/Elshaden/laravel-promocodes.git",
-            "type": "git"
+            "type": "vcs"
         }
     ],
     "require": {
         "php": ">=7.3",
-        "zgabievi/laravel-promocodes": "*"
+        "zgabievi/laravel-promocodes": "dev-L10"
     },
     "autoload": {
         "psr-4": {

@@ -10,11 +10,15 @@
         {
             "type": "composer",
             "url": "https://nova.laravel.com"
+        },
+        {
+            "url": "https://github.com/Elshaden/laravel-promocodes.git",
+            "type": "git"
         }
     ],
     "require": {
         "php": ">=7.3",
-        "zgabievi/laravel-promocodes": "^9.1"
+        "zgabievi/laravel-promocodes": "*"
     },
     "autoload": {
         "psr-4": {

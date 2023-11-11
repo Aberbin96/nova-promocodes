@@ -12,13 +12,13 @@
             "url": "https://nova.laravel.com"
         },
         {
-            "url": "https://github.com/Elshaden/laravel-promocodes.git",
+            "url": "https://github.com/Aberbin96/laravel-promocodes.git",
             "type": "vcs"
         }
     ],
     "require": {
         "php": ">=7.3",
-        "zgabievi/laravel-promocodes": "dev-L10"
+        "zgabievi/laravel-promocodes": "dev-main"
     },
     "autoload": {
         "psr-4": {

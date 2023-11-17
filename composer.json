@@ -13,7 +13,7 @@
         },
         {
             "url": "https://github.com/Aberbin96/laravel-promocodes.git",
-            "type": "vcs"
+            "type": "git"
         }
     ],
     "require": {

@@ -4,8 +4,82 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "15c0925e896315060a86b1970e40ff24",
+    "content-hash": "45b4062e2bd58bc2d18e63248a1047f7",
     "packages": [
+        {
+            "name": "aberbin96/laravel-promocodes",
+            "version": "dev-release/9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Aberbin96/laravel-promocodes.git",
+                "reference": "4b6c44b8ad39455a9cee24cbd30544d5cef88729"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Aberbin96/laravel-promocodes/zipball/4b6c44b8ad39455a9cee24cbd30544d5cef88729",
+                "reference": "4b6c44b8ad39455a9cee24cbd30544d5cef88729",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/broadcasting": ">=9.0",
+                "illuminate/console": ">=9.0",
+                "illuminate/container": ">=9.0",
+                "illuminate/database": ">=9.0",
+                "illuminate/queue": ">=9.0",
+                "illuminate/support": ">=9.0",
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "nunomaduro/larastan": ">=2.0",
+                "orchestra/testbench": ">=7.1",
+                "pestphp/pest": ">=1.21",
+                "pestphp/pest-plugin-laravel": ">=1.2",
+                "pestphp/pest-plugin-mock": ">=1.0",
+                "phpunit/phpunit": ">=9.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Zorb\\Promocodes\\PromocodesServiceProvider"
+                    ],
+                    "aliases": {
+                        "Promocodes": "Zorb\\Promocodes\\Facades\\Promocodes"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Zorb\\Promocodes\\": "src/",
+                    "Zorb\\Promocodes\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Zura Gabievi",
+                    "email": "zura.gabievi@email.com",
+                    "homepage": "https://github.com/aberbin96"
+                }
+            ],
+            "description": ":package_description",
+            "homepage": "https://github.com/aberbin96/laravel-promocodes",
+            "keywords": [
+                "laravel",
+                "promocodes"
+            ],
+            "support": {
+                "source": "https://github.com/Aberbin96/laravel-promocodes/tree/release/9.0"
+            },
+            "time": "2023-11-17T17:32:22+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.11.0",
@@ -2803,89 +2877,13 @@
                 }
             ],
             "time": "2022-03-08T17:03:00+00:00"
-        },
-        {
-            "name": "zgabievi/laravel-promocodes",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Aberbin96/laravel-promocodes.git",
-                "reference": "2d4ce4941525f6dbbb767b3084f6b36fb32ed192"
-            },
-            "require": {
-                "illuminate/broadcasting": ">=9.0",
-                "illuminate/console": ">=9.0",
-                "illuminate/container": ">=9.0",
-                "illuminate/database": ">=9.0",
-                "illuminate/queue": ">=9.0",
-                "illuminate/support": ">=9.0",
-                "php": ">=7.3"
-            },
-            "require-dev": {
-                "nunomaduro/larastan": ">=2.0",
-                "orchestra/testbench": ">=7.1",
-                "pestphp/pest": ">=1.21",
-                "pestphp/pest-plugin-laravel": ">=1.2",
-                "pestphp/pest-plugin-mock": ">=1.0",
-                "phpunit/phpunit": ">=9.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Zorb\\Promocodes\\PromocodesServiceProvider"
-                    ],
-                    "aliases": {
-                        "Promocodes": "Zorb\\Promocodes\\Facades\\Promocodes"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Zorb\\Promocodes\\": "src/",
-                    "Zorb\\Promocodes\\Database\\Factories\\": "database/factories"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Zorb\\Promocodes\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "./vendor/bin/pest"
-                ],
-                "phpstan": [
-                    "./vendor/bin/phpstan analyse"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Zura Gabievi",
-                    "email": "zura.gabievi@email.com",
-                    "homepage": "https://github.com/zgabievi"
-                }
-            ],
-            "description": ":package_description",
-            "homepage": "https://github.com/zgabievi/laravel-promocodes",
-            "keywords": [
-                "Laravel",
-                "Promocodes"
-            ],
-            "time": "2023-11-11T15:37:45+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "zgabievi/laravel-promocodes": 20
+        "aberbin96/laravel-promocodes": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
